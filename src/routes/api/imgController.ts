@@ -19,7 +19,7 @@ imgController.get('/:name', async (req: express.Request, res: express.Response):
     res.status(404).send(`Image ${errorImgNotFound}`);
     return;
   }
-  // check width of image not empty and is a positive integer
+
 
   // if width and height have no value then get original image or both value will resize image
   if (nameImg && !widthImg && !heightImg) {
@@ -28,6 +28,7 @@ imgController.get('/:name', async (req: express.Request, res: express.Response):
   } else {
     const errorCodeWith = handleImg.validatorNumberWidthOrHeight(widthImg);
     const errorCodeHeight = handleImg.validatorNumberWidthOrHeight(heightImg);
+      // check width of image not empty and is a positive integer
     if (errorCodeWith) {
       res.status(400).send(`Width ${errorCodeWith}`);
       return;
