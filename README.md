@@ -21,7 +21,7 @@ Run `npm run prettier` check all development code by prettier in app project.
 ## List Api Valid
 
 http://localhost:5000/api/img/:name
-change :name to image name. List available image
+change `:name` to image name. List available image
     - encenadaport
     - fjord
     - icelandwaterfall
@@ -32,8 +32,8 @@ will display images by encenadaport
 
 http://localhost:5000/api/img/encenadaport?width=200&height=200
 Query params value: 
-    - width: positive number
-    - heigth: positive number
+    - `width: positive number`
+    - `heigth: positive number`
 Will scale the encenadaport according to the width and height value.
 
 ## List API Invalid
