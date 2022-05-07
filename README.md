@@ -21,7 +21,8 @@ Run `npm run prettier` check all development code by prettier in app project.
 ## List Api Valid
 
 http://localhost:5000/api/img/:name
-change `:name` to image name. List available image
+change `:name` to image name. 
+List available image
     - encenadaport
     - fjord
     - icelandwaterfall
