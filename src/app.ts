@@ -6,11 +6,11 @@ const port = 5000;
 
 // Add routes
 app.use('/api', apiRoutes);
-app.use('/',(req: express.Request, res: express.Response)=>{
-    return res.send('Wellcome to Project');
+app.use('/', (req: express.Request, res: express.Response): void => {
+  res.send('Wellcome to Project');
 })
 // Start server
-app.listen(port, async (): Promise<void> => {
+app.listen(port, (): void => {
   console.log(`Projcet run with port ${port}`);
 });
 
