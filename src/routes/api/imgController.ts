@@ -17,6 +17,7 @@ imgController.get('/:name', async (req: express.Request, res: express.Response):
   // Check if the image file exists or not
   if (errorImgNotFound) {
     res.status(404).send(`Image ${errorImgNotFound}`);
+    return;
   }
 
 
@@ -29,10 +30,12 @@ imgController.get('/:name', async (req: express.Request, res: express.Response):
     // check width of image not empty and is a positive integer
     if (errorCodeWith) {
       res.status(400).send(`Width ${errorCodeWith}`);
+      return;
     }
     // check height of image not empty and is a positive integer
     if (errorCodeHeight) {
       res.status(400).send(`Height ${errorCodeHeight}`);
+      return;
     }
     if (handleImg.existFileOrDirectory(pathFolderResize)) {
       fs.mkdirSync(pathFolderResize);
