@@ -2,7 +2,9 @@
 
 Project : Image Processing Api
 ## Development server
-Run `npm install` insall node module of project
+### Instal
+Run `npm install` insall node module of project.
+### Run Project
 Run `npm run start` for a dev server. Navigate to `http://localhost:5000/`. 
 
 ## Build
