@@ -7,7 +7,7 @@ const errorMessageMustBeNumber = 'must be number';
 const errorMessagePostitiveNumber = 'must be positive number';
 
 /**
- * Gets image file
+ * Resize image file
  *
  * @param {string} name name of image
  * @param {string} width width of image
@@ -29,7 +29,7 @@ const resizeImg = async (
 };
 
 /**
- * Gets image file
+ * Check exist file or directory
  *
  * @param {string} path path of file or directory
  * @return {string} error code with not exists
@@ -41,7 +41,7 @@ const existFileOrDirectory = (path: string): string => {
   return '';
 };
 /**
- * Gets image file
+ * validator value of height or width
  *
  * @param {string} value value of width or height of image
  * @return {string} error code with not exists
