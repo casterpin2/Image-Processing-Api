@@ -30,8 +30,8 @@ List available image
     - icelandwaterfall
     - palmtunnel
     - santamonica
-example : http://localhost:5000/api/img/encenadaport
-will display images by encenadaport
+Example : http://localhost:5000/api/img/encenadaport
+Will display images by encenadaport
 
 http://localhost:5000/api/img/encenadaport?width=200&height=200
 Query params value: 
@@ -42,13 +42,13 @@ Will scale the encenadaport according to the width and height value.
 ## List API Invalid
 
 http://localhost:5000/api/img/encenadaport?width=200&height=-200
-return status `400` and show message `Height must be positive number`
+Return status `400` and show message `Height must be positive number`
 
 http://localhost:5000/api/img/encenadaport?width=-200&height=200
-return status `400` and show message `Width must be positive number`
+Return status `400` and show message `Width must be positive number`
 
 http://localhost:5000/api/img/test100
-return status `404` and show message `Image not found`
+Return status `404` and show message `Image not found`
 
 http://localhost:5000/api/img/encenadaport?width=a&height=200
-return status `400` and show message `Width must be number`
+Return status `400` and show message `Width must be number`
