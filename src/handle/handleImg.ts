@@ -21,7 +21,6 @@ const resizeImg = async (
   nameFileResize: string
 ): Promise<boolean> => {
   try {
-    console.log(nameFileResize);
     await sharp(name).resize(Number(width), Number(height)).toFile(nameFileResize);
     return true;
   } catch (ex) {
@@ -63,5 +62,5 @@ const validatorNumberWidthOrHeight = (value: string): string => {
 export default {
   resizeImg,
   existFileOrDirectory,
-  validatorNumberWidthOrHeight,
+  validatorNumberWidthOrHeight
 };
